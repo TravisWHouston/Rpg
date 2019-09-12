@@ -6,10 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lord of the Rings</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:900&display=swap" rel="stylesheet">
     <style>
-    .choice {
+    .good {
         height: 200px;
         width: 2000px;
+    }
+    .evil{
+        height: 200px;
+        width: 2000px;
+    }
+    .size {
+        height: 225px;
+        width: 225px !important;
+    }
+    .row {
+        margin-bottom: 0px;
+    }
+    h3 {
+        margin: 0px;
+    }
+    .brand-logo {
+        color: rgb(223, 214, 119)!important;
+    }
+    .nav-wrapper {
+        background: black;
+    }
+    #container {
+        font-family: 'Cinzel Decorative', cursive;
     }
 
     </style>
@@ -19,27 +43,34 @@
 <div class="row" id="message">
  <nav>
     <div class="nav-wrapper">
-      <span class="brand-logo center">Lord of the Rings</span> 
+      <span class="brand-logo center">THE LORD OF THE RINGS</span> 
     </div>
  </nav>
+</div>
+<div class="row  center">
+    Wins:<span id="wins">0</span>
+    Losses:<span id="loss">0</span>
 </div>
 <!-- Spot for Good -->
  <div class="row" id="goodChar">
     
  </div>
 
- <div class="row">
-
+ <div class="row center">
+    <h3>VS.</h3>
  </div>
  <!-- Spot for Evil -->
  <div class="row" id="evilChar">
      
  </div>
  <!-- Spot for selected Char -->
- <div class="row" id="arena">
-        
-     
- </div>
+ 
+<div class="row center"><button id="btn">Attack!</button> 
+<div class="row" id="arena"></div>
+    
+</div>
+</div>
+
 </div>
     
 
